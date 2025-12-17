@@ -441,7 +441,7 @@ class CommentToMail_Plugin implements Typecho_Plugin_Interface
 		}
 
 		// 添加至队列
-		$cfg      = (object)$cfg;
+		$cfg  = (object)$cfg;
 		$db = Typecho_Db::get();
 		$prefix = $db->getPrefix();
 		$id = $db->query(
